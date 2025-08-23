@@ -91,7 +91,7 @@ Quits the program.
 ---
 
 ## Key Implementation Details
--RMS priority mapping:
+- RMS priority mapping:
 period == 0 → priority = 1 (lowest). <br>
 Else → priority = 10 - ((period * 9) / 1000), clamped to [1,10].
 - Task selection: Highest-priority ready task; ties broken by shorter period.
