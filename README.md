@@ -81,9 +81,36 @@ Quits the program.
 - DEFAULT_QUANTUM = 50 ms
 - Safety cap: simulation stops if simulation_time > 10000.
 
+---
+
 ## Test Case (11 tasks on 3 cores)
 <img width="755" height="614" alt="image" src="https://github.com/user-attachments/assets/470bd008-4430-4e5e-a258-75118f806169" />
 
 <img width="576" height="613" alt="image" src="https://github.com/user-attachments/assets/d6cc6ab8-318c-465e-8c67-28c6df799c6f" />
+
+---
+
+## Key Implementation Details
+-RMS priority mapping:
+period == 0 → priority = 1 (lowest). <br>
+Else → priority = 10 - ((period * 9) / 1000), clamped to [1,10].
+- Task selection: Highest-priority ready task; ties broken by shorter period.
+- Preemption: Time slice expiration → task is preempted.
+- Cycle detection: DFS with recursion stack flags invalid DAGs.
+- Safety cap: simulation_time > 10000 stops infinite/deadlocked runs.
+
+---
+
+## Platform Support
+- Linux (native)
+- macOS (native) — clang supports -pthread; you may see usleep deprecation warnings (safe to ignore).
+- Windows (via WSL2 + Ubuntu)
+
+---
+## Contributors
+
+- **Raashi Sharma**
+- **Dhanya Girdhar**  
+- **Aastha Malhotra**
 
 
