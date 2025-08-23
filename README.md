@@ -34,3 +34,15 @@ It is implemented in **C** (single-file `scheduler.c` in this repo) and uses sta
 
 ---
 
+## How to Use (Menu Driven)
+
+When you run the program:
+
+```bash
+gcc scheduler.c -o scheduler -pthread
+./scheduler
+```
+
+
+
+
