@@ -50,8 +50,8 @@ Builds the sample 10-task DAG used in the project report.
 Interactive DAG creation:
 - Enter the number of tasks (num_tasks).
 - For each task, provide its duration (ms) and period (ms).
-- Enter dependency pairs in the form:
-<taskID> <dependencyID>
+- Enter dependency pairs in the form: <br>
+``` <taskID> <dependencyID> ```
 - Enter -1 when finished.
 
 ### 3. Display Current DAG
