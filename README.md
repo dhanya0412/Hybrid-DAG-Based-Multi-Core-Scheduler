@@ -58,15 +58,15 @@ Interactive DAG creation:
 Prints the task list, assigned priorities, and the adjacency matrix.
 
 ### 4. Run Performance Comparison
-Runs the Hybrid DAG + RMS scheduler simulation.
-You will be prompted to:
-Enter number of cores (1–16).
-Enter time quantum (ms) → must be ≥ 10 ms (default: 50 ms).
-Toggle debug mode to see detailed logs (Start / Preempt / Complete events).
+- Runs the Hybrid DAG + RMS scheduler simulation.
+- You will be prompted to:
+- Enter number of cores (1–16).
+- Enter time quantum (ms) → must be ≥ 10 ms (default: 50 ms).
+- Toggle debug mode to see detailed logs (Start / Preempt / Complete events).
 
 ### 5. Export Results to CSV
-Writes two CSV files:
-scheduler_results_<name>_<num_cores>_cores.csv (per-task results).
+- Writes two CSV files:
+scheduler_results_<name>_<num_cores>_cores.csv (per-task results). <br>
 core_utilization_<name>_<num_cores>_cores.csv (per-core utilization stats).
 
 ### 6. Exit
