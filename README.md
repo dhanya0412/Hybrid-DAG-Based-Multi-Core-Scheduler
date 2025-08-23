@@ -43,6 +43,62 @@ gcc scheduler.c -o scheduler -pthread
 ./scheduler
 ```
 
+1. Create Sample DAG
+
+Builds the sample 10-task DAG used in the project report.
+
+2. Create Custom DAG
+
+Interactive DAG creation:
+
+Enter the number of tasks (num_tasks).
+
+For each task, provide its duration (ms) and period (ms).
+
+Enter dependency pairs in the form:
+
+<taskID> <dependencyID>
 
 
+Enter -1 when finished.
+
+3. Display Current DAG
+
+Prints the task list, assigned priorities, and the adjacency matrix.
+
+4. Run Performance Comparison
+
+Runs the Hybrid DAG + RMS scheduler simulation.
+
+You will be prompted to:
+
+Enter number of cores (1–16).
+
+Enter time quantum (ms) → must be ≥ 10 ms (default: 50 ms).
+
+Toggle debug mode to see detailed logs (Start / Preempt / Complete events).
+
+5. Export Results to CSV
+
+Writes two CSV files:
+
+scheduler_results_<name>_<num_cores>_cores.csv (per-task results).
+
+core_utilization_<name>_<num_cores>_cores.csv (per-core utilization stats).
+
+6. Exit
+
+Quits the program.
+
+⚙️ Defaults & Constraints
+
+MAX_TASKS = 100
+
+MAX_CORES = 16
+
+MIN_QUANTUM = 10 ms
+
+DEFAULT_QUANTUM = 50 ms
+
+Safety cap: simulation stops if simulation_time > 10000.
 
