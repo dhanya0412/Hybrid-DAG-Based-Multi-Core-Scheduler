@@ -48,11 +48,11 @@ Builds the sample 10-task DAG used in the project report.
 
 ### 2. Create Custom DAG
 Interactive DAG creation:
-Enter the number of tasks (num_tasks).
-For each task, provide its duration (ms) and period (ms).
-Enter dependency pairs in the form:
+- Enter the number of tasks (num_tasks).
+- For each task, provide its duration (ms) and period (ms).
+- Enter dependency pairs in the form:
 <taskID> <dependencyID>
-Enter -1 when finished.
+- Enter -1 when finished.
 
 ### 3. Display Current DAG
 Prints the task list, assigned priorities, and the adjacency matrix.
@@ -80,4 +80,10 @@ Quits the program.
 - MIN_QUANTUM = 10 ms
 - DEFAULT_QUANTUM = 50 ms
 - Safety cap: simulation stops if simulation_time > 10000.
+
+## Test Case (11 tasks on 3 cores)
+<img width="755" height="614" alt="image" src="https://github.com/user-attachments/assets/470bd008-4430-4e5e-a258-75118f806169" />
+
+<img width="576" height="613" alt="image" src="https://github.com/user-attachments/assets/d6cc6ab8-318c-465e-8c67-28c6df799c6f" />
+
 
