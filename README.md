@@ -106,11 +106,4 @@ Else → priority = 10 - ((period * 9) / 1000), clamped to [1,10].
 - macOS (native) — clang supports -pthread; you may see usleep deprecation warnings (safe to ignore).
 - Windows (via WSL2 + Ubuntu)
 
----
-## Contributors
-
-- **Raashi Sharma**
-- **Dhanya Girdhar**  
-- **Aastha Malhotra**
-
 
